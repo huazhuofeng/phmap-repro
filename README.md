@@ -21,3 +21,8 @@ Raw reads were uniformly reprocessed using a STARsolo-based pipeline with a cons
 To evaluate batch correction and data harmonization, multiple integration algorithms were applied, categorized by their output types: embeddings, full features, or kNN graphs. Integration was primarily conducted in Scanpy, with select methods implemented in Seurat (4.4.1) for compatibility.
 
 > Code for pipeline can be found at https://github.com/Doctorluka/ScibPlot.
+
+### Robust Marker Pipeline
+A reusable end‑to‑end pipeline for robust cross‑sample marker identification (pseudobulk + edgeR + cross‑sample consistency) on Seurat v5 object.
+
+> Code for pipeline can be found at the current repository.
