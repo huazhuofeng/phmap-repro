@@ -1,0 +1,16 @@
+input: /path/to/your_object.qs
+outdir: results/run_001
+
+assay: RNA
+sample_col: sample
+cluster_col: final_celltype
+study_col: study
+
+min_cells: 30
+min_samples_cluster: 3
+min_cpm: 1
+min_samples_cpm: 3
+fdr_max: 0.05
+min_median_logFC: 0.25
+min_prop_same_sign: 0.6
+min_expr_prop_in_A: 0.5

@@ -1,0 +1,38 @@
+configfile: "config/config.yaml"
+
+rule all:
+    input:
+        f"{config['outdir']}/phase4_summary.csv",
+        f"{config['outdir']}/run_params.json",
+        f"{config['outdir']}/full_out.rds"
+
+rule robust_marker_pipeline:
+    input:
+        seurat_obj=lambda wc: config["input"]
+    output:
+        summary=f"{config['outdir']}/phase4_summary.csv",
+        params_json=f"{config['outdir']}/run_params.json",
+        full_out=f"{config['outdir']}/full_out.rds"
+    log:
+        f"logs/pipeline.log"
+    conda:
+        "envs/r-marker.yml"
+    shell:
+        r'''
+        Rscript scripts/run_pipeline.R \
+          --input {input.seurat_obj} \
+          --outdir {config[outdir]} \
+          --assay {config[assay]} \
+          --sample_col {config[sample_col]} \
+          --cluster_col {config[cluster_col]} \
+          --study_col {config[study_col]} \
+          --min_cells {config[min_cells]} \
+          --min_samples_cluster {config[min_samples_cluster]} \
+          --min_cpm {config[min_cpm]} \
+          --min_samples_cpm {config[min_samples_cpm]} \
+          --fdr_max {config[fdr_max]} \
+          --min_median_logFC {config[min_median_logFC]} \
+          --min_prop_same_sign {config[min_prop_same_sign]} \
+          --min_expr_prop_in_A {config[min_expr_prop_in_A]} \
+          > {log} 2>&1
+        '''

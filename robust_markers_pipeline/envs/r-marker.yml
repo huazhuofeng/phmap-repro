@@ -1,0 +1,12 @@
+name: seuratv5-robust-marker
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base>=4.3
+  - r-seurat
+  - bioconductor-edger
+  - r-matrix
+  - r-jsonlite
+  - r-yaml
+  - r-qs

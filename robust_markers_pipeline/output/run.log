@@ -1,0 +1,10 @@
+nohup: ignoring input
+/usr/local/lib/R/library/reticulate/python/rpytools/loader.py:120: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  return _find_and_load(name, import_)
+An object of class Seurat 
+19007 features across 18860 samples within 1 assay 
+Active assay: RNA (19007 features, 0 variable features)
+ 1 layer present: counts
+Pipeline finished.
+Output directory: /home/data/fhz/project/reference_map_PH/results/smc_cross_datasets 
+Summary file: /home/data/fhz/project/reference_map_PH/results/smc_cross_datasets/phase4_summary.csv 

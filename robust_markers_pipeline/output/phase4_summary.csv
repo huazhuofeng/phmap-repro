@@ -1,0 +1,6 @@
+"cluster","status","n_samples_usable","n_markers","note"
+"SMC_c1_contractile_CNN1","ok",8,130,""
+"SMC_c2_de-diff_FLNA","ok",8,159,""
+"SMC_c3_de-diff_LUM","ok",11,807,""
+"SMC_c4_de-diff_SOCS3","ok",8,31,""
+"SMC_c5_de-diff_COX4I2","ok",12,44,""
