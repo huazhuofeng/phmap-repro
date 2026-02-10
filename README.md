@@ -5,6 +5,7 @@ Reproductive analysis code for PH-Map atlas
 All statistical computations were executed in R (v4.4.1). Data distribution and variance homogeneity were evaluated using the Shapiro-Wilk (n ≤ 5000) or Anderson-Darling (n > 5000) test and Bartlett’s test, respectively. Parametric data were analyzed via unpaired Student’s t-test (two groups) or one-way/two-way ANOVA followed by Tukey’s HSD post hoc test; Welch’s ANOVA with Games-Howell test was substituted if variances were unequal. Non-parametric datasets were assessed using Mann-Whitney U test or Kruskal-Wallis test with Dunn’s post hoc tests. Data are expressed as mean ± SD unless specified. Statistical significance was set at P < 0.05, with all analyses performed in a blinded manner.
 
 > Code for pipeline can be found at https://github.com/Doctorluka/Multiple_Group_Statistics.
+> The Python version can be found at https://github.com/huazhuofeng/statistics_in_python.
 
 ### PH-Map tools
 PH-Map: Multi-task cell type classification package for single-cell RNA sequencing data.
