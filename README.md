@@ -26,3 +26,6 @@ To evaluate batch correction and data harmonization, multiple integration algori
 A reusable end‑to‑end pipeline for robust cross‑sample marker identification (pseudobulk + edgeR + cross‑sample consistency) on Seurat v5 object.
 
 > Code for pipeline can be found at the current repository.
+
+### Interactive web portal
+> An interactive web portal for visualization and exploration of the atlas is available at https://www.phatlas.top. The code can be found at https://github.com/jarxunlai/PH-map-online
