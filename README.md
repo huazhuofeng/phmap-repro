@@ -1,6 +1,20 @@
 # phmap-repro
 Reproductive analysis code for PH-Map atlas
 
+-----Code for pipeline can be found at the current repository-----
+
+### Robust Marker Pipeline
+A reusable end‑to‑end pipeline for robust cross‑sample marker identification (pseudobulk + edgeR + cross‑sample consistency) on Seurat v5 object.
+
+### Hierarchical annotation
+Codes for hierarchical annotation.
+
+### Preprocessing and QC
+Codes for preprocessing and quality control on anndata objects.
+
+
+-----Code for pipeline can be found at other repositories-----
+
 ### Statistical analysis
 All statistical computations were executed in R (v4.4.1). Data distribution and variance homogeneity were evaluated using the Shapiro-Wilk (n ≤ 5000) or Anderson-Darling (n > 5000) test and Bartlett’s test, respectively. Parametric data were analyzed via unpaired Student’s t-test (two groups) or one-way/two-way ANOVA followed by Tukey’s HSD post hoc test; Welch’s ANOVA with Games-Howell test was substituted if variances were unequal. Non-parametric datasets were assessed using Mann-Whitney U test or Kruskal-Wallis test with Dunn’s post hoc tests. Data are expressed as mean ± SD unless specified. Statistical significance was set at P < 0.05, with all analyses performed in a blinded manner.
 
@@ -22,11 +36,6 @@ Raw reads were uniformly reprocessed using a STARsolo-based pipeline with a cons
 To evaluate batch correction and data harmonization, multiple integration algorithms were applied, categorized by their output types: embeddings, full features, or kNN graphs. Integration was primarily conducted in Scanpy, with select methods implemented in Seurat (4.4.1) for compatibility.
 
 > Code for pipeline can be found at https://github.com/Doctorluka/ScibPlot.
-
-### Robust Marker Pipeline
-A reusable end‑to‑end pipeline for robust cross‑sample marker identification (pseudobulk + edgeR + cross‑sample consistency) on Seurat v5 object.
-
-> Code for pipeline can be found at the current repository.
 
 ### Interactive web portal
 > An interactive web portal for visualization and exploration of the atlas is available at https://www.phatlas.top. The code can be found at https://github.com/jarxunlai/PH-map-online
